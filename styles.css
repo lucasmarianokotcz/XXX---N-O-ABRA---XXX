@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.tela-inicial {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    /* ou ajuste conforme necessário */
+    width: 100%;
+    cursor: pointer;
+}
+
+.mensagem-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+h1 {
+    color: #ff4081;
+}
+
+.danger {
+    color: red;
+}
+
+#mensagem {
+    font-size: 18px;
+    color: #333;
+}
+
+img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.heart {
+    width: 100px;
+    height: 90px;
+    background-color: #ff4081;
+    position: relative;
+    transform: rotate(-45deg);
+    top: -25px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #ff4081;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    top: -10px;
+    left: 44px;
+}
